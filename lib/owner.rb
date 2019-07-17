@@ -9,7 +9,6 @@ attr_accessor :owner,:cats,:cat,:dog,:dogs
   def initialize(name)
     @species = "human"
     @name = name
-    @owner = owner
     @@all << self
     @cats = []
     @dogs = []
