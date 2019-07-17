@@ -31,9 +31,11 @@ attr_accessor :owner,:cats,:cat,:dog,:dogs
      #self
    end
 
-    def buy_cat(name,owner)
-      @cats << Cat.new(name,owner)
-    end
+  def buy_cat(name)
+    cat = Cat.new(name)
+    cats << cat
+  end
+
 
    def self.reset_all
     @@all.clear
