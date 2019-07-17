@@ -43,7 +43,7 @@ attr_accessor :owner,:cats,:dogs
   end
 
   def sell_pets
-    @dog.each do |dog|
+    @dogs.each do |dog|
       dog.mood = "nervous"
       dog.owner = nil
     end
