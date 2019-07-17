@@ -66,7 +66,7 @@ attr_accessor :owner,:cats,:dogs
     @@all.clear
   end
 
-  def list_pets
+  def list_pets(dogs,cats)
   puts "I have #{owner.dogs.count} dog(s), and #{owner.cats.count} cat(s)."
   end
 end
