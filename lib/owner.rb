@@ -47,8 +47,14 @@ attr_accessor :owner,:cats,:dogs
       dog.mood = "nervous"
       dog.owner = nil
     end
+    @cats.each do |cat|
+      cat.mood = "nervous"
+      cat.owner = nil
+    end
     @dogs.clear
+    @cats.clear
   end
+
 
    def self.reset_all
     @@all.clear
