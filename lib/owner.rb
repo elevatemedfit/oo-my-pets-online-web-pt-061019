@@ -32,8 +32,8 @@ attr_accessor :owner,:cats,:dogs
   end
 
   def buy_dog(name)
-    new_dog = dog.new(name,self)
-    new_dog #look at class relationship gets rid of redundantcy 
+    new_dog = Dog.new(name,self)
+    new_dog #look at class relationship gets rid of redundantcy
   end
 
 
