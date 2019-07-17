@@ -65,8 +65,15 @@ attr_accessor :owner,:cats,:dogs
    def self.reset_all
     @@all.clear
   end
-
-  def list_pets(dogs,cats)
-  puts "I have #{owner.dogs.count} dog(s), and #{owner.cats.count} cat(s)."
+  # def list_pets
+  #     num_dogs = @pets[:dogs].size
+  #     num_cats = @pets[:cats].size
+  #     num_fish = @pets[:fishes].size
+  #     return "I have #{num_fish} fish, #{num_dogs} dog(s), and #{num_cats} cat(s)."
+  #   end
+  def list_pets
+    dog_list = @dogs.size
+    cat_list = @cats.size
+  return "I have #{dog_list} dog(s), and #{cat_list} cat(s)."
   end
 end
