@@ -36,6 +36,11 @@ attr_accessor :owner,:cats,:dogs
     new_dog #look at class relationship gets rid of redundantcy
   end
 
+  def walk_dogs
+    @dogs.each do |dog|
+      dog.mood = "happy"
+    end
+  end
 
    def self.reset_all
     @@all.clear
